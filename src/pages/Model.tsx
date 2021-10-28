@@ -125,9 +125,11 @@ n^{\\prime}=\\frac{n K_{\\mathrm{d}}}{[R N A]} _{(11)}
           <Element name={"structure"}>
             <LocaleText id={"model_structure"} extraValues={{
               rna: <Webgl3D
-                url={"https://github.com/Nightwalk2001/igem/blob/7f4629a15283a593fbd76356c797a13544c1f90e/public/rna.glb"}/>,
-              protein1: <Webgl3D url={"https://github.com/Nightwalk2001/igem/blob/42f083838fe1ec1f511298f792c34cbb785b267b/public/protein1.glb"}/>,
-              protein2: <Webgl3D url={"https://github.com/Nightwalk2001/igem/blob/42f083838fe1ec1f511298f792c34cbb785b267b/public/protein2.glb"}/>
+                url={"https://github.com/Nightwalk2001/igem/blob/f6dcb4bd26a4ce68d2bfda8936a4a9920bdacf8c/public/rna.glb"}/>,
+              protein1: <Webgl3D
+                url={"https://github.com/Nightwalk2001/igem/blob/f6dcb4bd26a4ce68d2bfda8936a4a9920bdacf8c/public/protein1.glb"}/>,
+              protein2: <Webgl3D
+                url={"https://github.com/Nightwalk2001/igem/blob/f6dcb4bd26a4ce68d2bfda8936a4a9920bdacf8c/public/protein2.glb"}/>
             }}/>
           </Element>
         </VStack>
