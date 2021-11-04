@@ -2,8 +2,9 @@ import {Box, HStack, Image, SimpleGrid} from "@chakra-ui/react"
 import React from "react"
 import {useIntl} from "react-intl"
 
-export const HomeBrand: React.FC = () => {
+export const Brand: React.FC = () => {
   const intl = useIntl()
+
   return <HStack w={"80%"} m={"30px auto"} justify={"space-between"}>
     <Box w={"330px"}>
       {intl.formatMessage({id: "software"})}

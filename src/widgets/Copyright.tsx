@@ -81,7 +81,7 @@ export const Copyright: React.FC = () => {
         <VStack alignItems={"start"}>
           <HStack mt={"8px"} mb={"5px"} spacing={"16px"}>
             <Icon as={BsGithub} boxSize={6} _hover={{cursor: "pointer", color: activeColor}}
-                  onClick={() => window.open("https://github.com/")}/>
+                  onClick={() => window.open("https://github.com/Nightwalk2001/igem")}/>
             <Icon as={RiWechatFill} boxSize={6} _hover={{cursor: "pointer", color: activeColor}}
                   onClick={() => window.open("https://2021.igem.org/wiki/images/1/11/T--SYSU-CHINA--wechat.png")}/>
             <Icon as={RiBilibiliLine} boxSize={6} _hover={{cursor: "pointer", color: activeColor}}

@@ -4,8 +4,7 @@ import React from "react"
 import {IoLink} from "react-icons/io5"
 import {FormattedMessage, useIntl} from "react-intl"
 import {useHistory} from "react-router-dom"
-import {LoadingImage} from "./LoadingImage"
-import "./locale.css"
+import {LoadingImage} from "./Images"
 
 type LocaleTextProps = ChakraProps & {
   id: string
@@ -57,7 +56,7 @@ export const LocaleText: React.FC<LocaleTextProps> =
           italic: (chunks: string) => <chakra.span fontStyle={"italic"} fontWeight={"semibold"}>{chunks}</chakra.span>,
           link: (chunks: string) => {
             const arr = (chunks + "").split("=>")
-            return <Tooltip label={`https://2021.igem.org/Team:SYSU-CHINA#${arr[1]}`} placement={"top"}>
+            return <Tooltip label={`https://2021.igem.org/Team:SYSU-CHINA${arr[1]}`} placement={"top"}>
               <chakra.span
                 fontWeight={"semibold"}
                 mx={"5px"}

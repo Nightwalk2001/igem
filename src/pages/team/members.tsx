@@ -1,15 +1,14 @@
 import {VStack} from "@chakra-ui/react"
 import React from "react"
-import {MemberCard} from "../../features"
-import {Abstract, ContentWrapper, LocaleText, Subject, TeamImage} from "../../widgets"
+import {Abstract, ContentWrapper, LocaleText, MemberCard, Subject, TeamImage} from "../../widgets"
 
 export const Members: React.FC = () => {
   return <ContentWrapper>
-   <VStack>
-     <Subject id={"members"}/>
-     <Abstract id={"members"}/>
-     <TeamImage/>
-   </VStack>
+    <VStack>
+      <Subject id={"members"}/>
+      <Abstract id={"members"}/>
+      <TeamImage/>
+    </VStack>
     <LocaleText id={"members"}/>
     <MemberCard url={"4/45/T--SYSU-CHINA--memP1.png"}
                 name={"Rui Zhang"}

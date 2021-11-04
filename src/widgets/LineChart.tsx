@@ -1,9 +1,9 @@
 import {ResponsiveLine} from "@nivo/line"
 import React from "react"
-import data from "./data.json"
-import enzyme from "./enzyme.json"
+import data from "../assets/reaction.json"
+import enzyme from "../assets/enzyme.json"
 
-export const FormLineChart: React.FC = () => <ResponsiveLine
+export const ReactionLineChart: React.FC = () => <ResponsiveLine
   data={data}
   margin={{top: 50, right: 110, bottom: 50, left: 60}}
   xScale={{type: "point"}}

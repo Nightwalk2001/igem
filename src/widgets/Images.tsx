@@ -1,5 +1,18 @@
-import {Image} from "@chakra-ui/react"
-import React from "react"
+import {chakra, Image} from "@chakra-ui/react"
+import React, {memo} from "react"
+import {Loading} from "./Loading"
+
+export const LoadingImage: React.FC<{ url: string }> = memo(({url, ...rest}) => <chakra.img
+  src={`https://2021.igem.org/wiki/images/${url}`}
+  alt={""}
+  fallback={<Loading/>}
+  filter={"blur(10px)"}
+  maxW={800}
+  minH={300}
+  m={"45px auto 0"}
+  draggable={false}
+  {...rest}
+/>)
 
 export const ProjectImage: React.FC = () =>
   <Image

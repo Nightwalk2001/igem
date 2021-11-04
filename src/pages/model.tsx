@@ -3,9 +3,17 @@ import React, {useEffect} from "react"
 import {IoMenu} from "react-icons/io5"
 import {useDispatch, useSelector} from "react-redux"
 import {Element, scroller} from "react-scroll"
-import {EnzymeLineChart, FormLineChart, ModelForm} from "../features"
 import {clearTarget, State} from "../store"
-import {ContentWrapper, Latex, LocaleText, MenuScroller, Webgl3D} from "../widgets"
+import {
+  ContentWrapper,
+  EnzymeLineChart,
+  Latex,
+  LocaleText,
+  MenuScroller,
+  PredictForm,
+  ReactionLineChart,
+  Webgl3D
+} from "../widgets"
 
 export const Model: React.FC = () => {
   const dispatch = useDispatch()
@@ -97,7 +105,7 @@ K_{\\mathrm{d}}=\\frac{[R N A][R B P]}{[R \\cdot P]} _{(10)} \\\\
 n^{\\prime}=\\frac{n K_{\\mathrm{d}}}{[R N A]} _{(11)}
 \\end{array}} `}/>,
                 form: <Element name={"platform"}>
-                  <ModelForm/>
+                  <PredictForm/>
                 </Element>
               }}/>
           </Element>
@@ -109,7 +117,7 @@ n^{\\prime}=\\frac{n K_{\\mathrm{d}}}{[R N A]} _{(11)}
                           formula2: <Latex tex={`{\\large \\frac{J^{\\prime}}{t}=D \\frac{C_{0}-C_{1}}{x}} `}/>,
                           formula3: <Latex tex={`{\\large C_{1}=-\\frac{x J^{\\prime}}{D t}+C_{0}} `}/>,
                           chart: <Box h={"500px"} mx={"auto"}>
-                            <FormLineChart/>
+                            <ReactionLineChart/>
                           </Box>,
                           canvas2D: <React.Fragment>
                             <Image

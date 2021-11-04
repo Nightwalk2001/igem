@@ -1,8 +1,7 @@
 import {AspectRatio, Box, chakra, HStack, Image, ListItem, UnorderedList, useColorMode, VStack} from "@chakra-ui/react"
 import React, {useEffect} from "react"
 import {useIntl} from "react-intl"
-import {HomeBrand} from "../features"
-import {Divider, LocaleText} from "../widgets"
+import {Brand, Divider, LocaleText} from "../widgets"
 
 export const Home: React.FC = () => {
   const {colorMode, setColorMode} = useColorMode()
@@ -119,6 +118,6 @@ export const Home: React.FC = () => {
 
     <Divider/>
 
-    <HomeBrand/>
+    <Brand/>
   </Box>
 }

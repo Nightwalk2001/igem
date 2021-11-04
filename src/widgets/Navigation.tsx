@@ -132,7 +132,7 @@ export const Navigation: React.FC = () => {
           as={IoLogoGithub}
           boxSize={5}
           _hover={{color: "#61e1d2"}}
-          onClick={() => window.open("www.baidu.com")}
+          onClick={() => window.open("https://github.com/Nightwalk2001/igem")}
         />
 
         <ColorSwitch/>

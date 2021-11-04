@@ -1,9 +1,7 @@
 import {Center, chakra} from "@chakra-ui/react"
 import {OrbitControls, useGLTF} from "@react-three/drei"
-import {Canvas, useFrame, useLoader} from "@react-three/fiber"
+import {Canvas, useFrame} from "@react-three/fiber"
 import React, {memo, Suspense, useEffect, useRef, useState} from "react"
-import {FileLoader} from "three"
-import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader"
 import LoadingAnim from "../assets/loading.json"
 import {LottieReact} from "./LottieReact"
 
@@ -13,13 +11,12 @@ type WebGLProps = {
 }
 
 const WebGL: React.FC<WebGLProps> = ({url, hovered}) => {
-  const fileLoader = new FileLoader()
-  fileLoader.setResponseType("arraybuffer")
   const gltf = useGLTF(url)
 
   const ref = useRef()
 
-  useEffect(() => {})
+  useEffect(() => {
+  })
 
   useFrame(() => {
     if (!hovered) (ref.current as any).rotation.x
@@ -40,7 +37,7 @@ export const Webgl3D: React.FC<{ url: string }> = memo(({url}) => {
   </Center>
 
   return <Suspense fallback={Loading}>
-    <chakra.div w={750} h={400} mx={"auto"}
+    <chakra.div w={750} h={400} m={"50px auto"}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}>
       <Canvas camera={{position: [0, window.innerWidth / window.innerHeight, 5]}}>

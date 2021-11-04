@@ -2,7 +2,7 @@ import {Box, Button, HStack} from "@chakra-ui/react"
 import {Form, Formik} from "formik"
 import React from "react"
 import {number, object, string} from "yup"
-import {InputItem} from "../widgets"
+import {InputItem} from "./index"
 
 type ComputeEnzymeParams = {
   channelCount: number,
@@ -15,7 +15,7 @@ type ComputeEnzymeParams = {
   dissociationCon: string
 }
 
-export const ModelForm: React.FC = () => {
+export const PredictForm: React.FC = () => {
   const reg = /^(\d{2,},)*\d+$/
 
   const testNumber = number().required("this value is required")
