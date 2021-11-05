@@ -3,9 +3,9 @@ import React from "react"
 import {useDispatch} from "react-redux"
 import {useHistory} from "react-router-dom"
 import {setTarget} from "../../store"
-import {Abstract, ContentWrapper, LocaleText, ProjectImage, Subject} from "../../widgets"
+import {Abstract, ContentWrapper, LocaleText, ProjectFigure,  Subject} from "../../widgets"
 
-export const Description: React.FC = () => {
+ const Description: React.FC = () => {
   const dispatch = useDispatch()
   const history = useHistory()
   const linkColor = useColorModeValue("#59c9c8", "#8457b0")
@@ -14,7 +14,7 @@ export const Description: React.FC = () => {
     <VStack>
       <Subject id={"description"}/>
       <Abstract id={"description"}/>
-      <ProjectImage/>
+      <ProjectFigure/>
       <LocaleText
         id={"description"}
         extraValues={{
@@ -38,3 +38,5 @@ export const Description: React.FC = () => {
     </VStack>
   </ContentWrapper>
 }
+
+export default Description

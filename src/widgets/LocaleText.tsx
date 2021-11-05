@@ -46,12 +46,11 @@ export const LocaleText: React.FC<LocaleTextProps> =
           </chakra.div>,
           photo: (chunks: string) => <LoadingImage url={chunks}/>,
           note: (chunks: string) => <chakra.div
-            w={"50%"}
+            w={"70%"}
             m={"14px auto 26px"}
             pb={"5px"}
             textAlign={"center"}
-            borderBottom={"2px solid grey"}
-            fontSize={14}>{chunks}</chakra.div>,
+            fontSize={15}>{chunks}</chakra.div>,
           ref: (chunks: string) => <chakra.div fontFamily={"Times New Roman"} fontSize={18}>{chunks}</chakra.div>,
           italic: (chunks: string) => <chakra.span fontStyle={"italic"} fontWeight={"semibold"}>{chunks}</chakra.span>,
           link: (chunks: string) => {

@@ -18,7 +18,7 @@ type ContentWrapperProps = ChakraProps & {
 export const ContentWrapper: React.FC<ContentWrapperProps> =
   ({
      children,
-     w = "70%",
+     w = 1000,
      m = "20px auto",
      fontFamily = "GT Walsheim, Work Sans, Helvetica Neue",
      fontSize = 20,

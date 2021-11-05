@@ -1,9 +1,15 @@
 import {AspectRatio, Box, chakra, HStack, Image, ListItem, UnorderedList, useColorMode, VStack} from "@chakra-ui/react"
 import React, {useEffect} from "react"
 import {useIntl} from "react-intl"
+import Home1 from "../assets/home1.webp"
+import Home2 from "../assets/home2.webp"
+import Home3 from "../assets/home3.webp"
+import Home4 from "../assets/home4.webp"
+import HomeBg from "../assets/home_bg.webp"
+import HomePoster from "../assets/home_poster.webp"
 import {Brand, Divider, LocaleText} from "../widgets"
 
-export const Home: React.FC = () => {
+const Home: React.FC = () => {
   const {colorMode, setColorMode} = useColorMode()
   const intl = useIntl()
 
@@ -20,7 +26,7 @@ export const Home: React.FC = () => {
     <VStack
       justify={"center"}
       h={400}
-      backgroundImage={"https://2021.igem.org/wiki/images/e/e6/T--SYSU-CHINA--home-titlebackground.png"}>
+      backgroundImage={HomeBg}>
       <Box
         fontSize={"52px"}
         fontWeight={"extrabold"}
@@ -46,15 +52,11 @@ export const Home: React.FC = () => {
         />
       </Box>
 
-      <Image
-        w={"460px"}
-        src={"https://2021.igem.org/wiki/images/1/1b/T--SYSU-CHINA--home2.png"}/>
+      <Image w={"460px"} src={Home1}/>
     </HStack>
 
     <HStack justify={"space-between"} h={550} my={"40px"} px={"15%"}>
-      <Image
-        w={"460px"}
-        src={"https://2021.igem.org/wiki/images/3/3f/T--SYSU-CHINA--home1.png"}/>
+      <Image w={"460px"} src={Home2}/>
       <Box maxW={"450px"} mr={"150px"}>
         <LocaleText
           id={"home2"}
@@ -81,16 +83,12 @@ export const Home: React.FC = () => {
         />
       </Box>
 
-      <Image
-        w={"460px"}
-        src={"https://2021.igem.org/wiki/images/5/59/T--SYSU-CHINA--home3.png"}
+      <Image w={"460px"} src={Home3}
       />
     </HStack>
 
     <HStack justify={"space-between"} h={550} my={"40px"} px={"15%"}>
-      <Image
-        w={"460px"}
-        src={"https://2021.igem.org/wiki/images/9/98/T--SYSU-CHINA--home4.png"}/>
+      <Image w={"460px"} src={Home4}/>
       <Box maxW={"450px"} mr={"250px"}>
         <LocaleText
           id={"home4"}
@@ -112,7 +110,7 @@ export const Home: React.FC = () => {
     <AspectRatio w={"960px"} h={"540px"} m={"70px auto 100px"}>
       <video
         src={"https://2021.igem.org/wiki/images/4/4d/T--SYSU-CHINA--.home.mp4"}
-        poster={"https://2021.igem.org/wiki/images/5/5b/T--SYSU-CHINA--poster.jpg"}
+        poster={HomePoster}
         controls/>
     </AspectRatio>
 
@@ -121,3 +119,5 @@ export const Home: React.FC = () => {
     <Brand/>
   </Box>
 }
+
+export default Home

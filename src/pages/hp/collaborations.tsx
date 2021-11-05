@@ -1,13 +1,12 @@
 import {VStack} from "@chakra-ui/react"
 import React from "react"
-import {Abstract, ContentWrapper, HPImage, LocaleText, Subject} from "../../widgets"
+import {Abstract, ContentWrapper, HpFigure, LocaleText, Subject} from "../../widgets"
 
-export const Collaborations: React.FC = () => {
-  return <ContentWrapper>
+const Collaborations: React.FC = () =>  <ContentWrapper>
   <VStack>
     <Subject id={"collaborations"}/>
     <Abstract id={"collaborations"}/>
-    <HPImage/>
+    <HpFigure/>
     <LocaleText
       id={"hp_collaborations"}
       extraValues={{
@@ -21,5 +20,6 @@ export const Collaborations: React.FC = () => {
       }}
     />
   </VStack>
-  </ContentWrapper>
-}
+</ContentWrapper>
+
+export default Collaborations

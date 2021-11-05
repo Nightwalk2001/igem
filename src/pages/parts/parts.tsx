@@ -1,14 +1,16 @@
 import {VStack} from "@chakra-ui/react"
 import React from "react"
-import {Abstract, ContentWrapper, LocaleText, PartsImage, Subject} from "../../widgets"
+import {Abstract, ContentWrapper, LocaleText, PartsFigure, Subject} from "../../widgets"
 
-export const Parts: React.FC = () => {
+const Parts: React.FC = () => {
   return <ContentWrapper>
     <VStack>
       <Subject id={"parts"}/>
       <Abstract id={"parts"}/>
-      <PartsImage/>
+      <PartsFigure/>
       <LocaleText id={"parts"}/>
     </VStack>
   </ContentWrapper>
 }
+
+export default Parts

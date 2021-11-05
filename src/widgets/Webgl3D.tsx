@@ -37,7 +37,7 @@ export const Webgl3D: React.FC<{ url: string }> = memo(({url}) => {
   </Center>
 
   return <Suspense fallback={Loading}>
-    <chakra.div w={750} h={400} m={"50px auto"}
+    <chakra.div w={750} h={400} m={"70px auto 25px"}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}>
       <Canvas camera={{position: [0, window.innerWidth / window.innerHeight, 5]}}>

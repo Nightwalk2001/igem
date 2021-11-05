@@ -78,7 +78,7 @@ export const en = {
 
     description: `
     <title>Abstract</title>
-<line>A successful artificial multi-enzyme reaction depends on finely choreographed interactions between diverse enzymes. However, efficacy of artificial multi-enzyme reactions is often restricted by large distances between enzymes, which results in low reaction rates. Cells employ subtle approaches to increase the rate of multi-enzyme reactions, such as forming multi-enzyme complexes. In our project, we used circular RNA as a backbone to aggregate enzymes we need in multi-enzyme reactions, based on the interaction between RNA and RNA-binding proteins, thus increasing the reaction efficiency. We noticed the effect of substrate diffusion on reaction efficiency in multi-enzyme reactions and develops a versatile platform to design multi-enzyme reactions based on Michaelis-Menten equation and Fick's law.The platform can calculate the required enzyme input according to the expected product output. Cellulose degradation is chosen to validate the feasibility of our design in the experiment, and our understanding of circRNA based multi-enzyme reactions will contribute to further exploration of more biological process.</line>
+<first>A successful artificial multi-enzyme reaction depends on finely choreographed interactions between diverse enzymes. However, efficacy of artificial multi-enzyme reactions is often restricted by large distances between enzymes, which results in low reaction rates. Cells employ subtle approaches to increase the rate of multi-enzyme reactions, such as forming multi-enzyme complexes. In our project, we used circular RNA as a backbone to aggregate enzymes we need in multi-enzyme reactions, based on the interaction between RNA and RNA-binding proteins, thus increasing the reaction efficiency. We noticed the effect of substrate diffusion on reaction efficiency in multi-enzyme reactions and develops a versatile platform to design multi-enzyme reactions based on Michaelis-Menten equation and Fick's law.The platform can calculate the required enzyme input according to the expected product output. Cellulose degradation is chosen to validate the feasibility of our design in the experiment, and our understanding of circRNA based multi-enzyme reactions will contribute to further exploration of more biological process.</first>
 <title>Background</title>
 <subtitle>Circular RNA</subtitle>
 <line>Circular RNAs (circRNAs) are non-coding RNAs that have a covalently closed loop and no poly-adenylated tail. They are generated during RNA splicing and arise from exons, introns, or a combination of both. CircRNAs have been identified as naturally occurring RNAs that are highly represented in the eukaryotic transcriptome. Most circular RNA transcripts are generally expressed at low levels relative to their respective linear RNAs and some circRNAs have been reported to be expressed more abundantly than their linear counterparts. CircRNAs can act as a miRNA sponge to repress miRNA function, participate in splicing of target genes, translate genes into protein and interact with RNA binding proteins (RBPs) [1]. </line>
@@ -109,7 +109,7 @@ export const en = {
     `,
 
     design: `
-    <line>Designing a circRNA-based assembly factory is not that easy, but it isn't complicated either. This simple "factory" consists only two parts: the circRNA and the specific designed fusion protein. The circRNA acts as a factory that assembles the production machines (fusion proteins). Several fragments of the circRNA sequence will form stemloop structures which will provide the biding sites of RNA binding protein.</line>
+    <first>Designing a circRNA-based assembly factory is not that easy, but it isn't complicated either. This simple "factory" consists only two parts: the circRNA and the specific designed fusion protein. The circRNA acts as a factory that assembles the production machines (fusion proteins). Several fragments of the circRNA sequence will form stemloop structures which will provide the biding sites of RNA binding protein.</first>
 <line>Similarly, we also need to modify the proteins. By fusing the RNA binding domain with the origin structure, the proteins obtain the ability to bind with specific stemloop of the RNA. That is, the circRNA scaffold is able to gather multiple fusion proteins. In a word, the circRNA and the fusion proteins bound to it form the basic building blocks of a circRNA-based assembly factory (Figure 1).</line>
 <photo>{photo1}</photo>
 <note>Figure 1. Pattern of circRNA scaffold: circRNA and fusion protein</note>
@@ -183,7 +183,7 @@ export const en = {
 
     contribution: `
     <title>New documents </title>
-<line>We uploaded the 3D structure of CenA (<open>BBa_K118023=>http://parts.igem.org/Part:BBa_K118023</open>) by using homologous modeling, which provides a visual impression for this widely used enzyme.</line>
+<first>We uploaded the 3D structure of CenA (<open>BBa_K118023=>http://parts.igem.org/Part:BBa_K118023</open>) by using homologous modeling, which provides a visual impression for this widely used enzyme.</first>
 <line>We added a series of new documents on part <open>BBa_K313010=>http://parts.igem.org/Part:BBa_K313010</open> (loading sequence of RNA phage MS2). By using RNAfold, we predicted the secondary structure of the circRNA containing the MS2 binding site. The optimal secondary structure and the centroid secondary structure is shown on the part page. We also predicted the 3D structure of the circRNA with the help of xiaolab (https://xiao.lab.asu.edu/). This may provide a usable circRNA sequence for future iGEMers. </line>
 <line>We supplemented the mechanism of MS2 binding on specific RNA binding site according the previous research. We provided the origin article that used split EGFP  to detect the protein interaction on RNA molecular.</line>
 <title>New parts</title>
@@ -205,7 +205,7 @@ export const en = {
 
     safety: `
     <title>Overview</title>
-<line>Safety is the paramount issue in synthetic biology today. We, members of SYSU-CHINA, strictly abide by the safety rules of IGEM competition and relevant regulations of China. Safety and ethical issues have always been considered in our project from the design stage to the experiment stage. After we understand the risks, the safety form is accessible.</line>
+<first>Safety is the paramount issue in synthetic biology today. We, members of SYSU-CHINA, strictly abide by the safety rules of IGEM competition and relevant regulations of China. Safety and ethical issues have always been considered in our project from the design stage to the experiment stage. After we understand the risks, the safety form is accessible.</first>
 <title>Laboratory safety</title>
 <line>We take lab safety very seriously. Most of us have never done these molecular biology experiment operations before, but under the guidance of PI, we mastered the experimental operation in batches. Each member's operation has been examined when conducting dangerous experiments such as electrophoresis.</line>
 <line>Security protocol of the lab has been well signed.</line>
@@ -233,7 +233,7 @@ export const en = {
 
     proof: `
       <title> Proof of concept </title>
-<line>Our goal is to use circRNA as molecular scaffold to colocalization enzymes to accelerate their reaction rate. For the proof of concept, we planed to perform split EGFP, which is an usual method to detect protein-protein interaction. If we can demonstrate that two EGFP fragments can be dragged to each other through the interaction between RNA aptamer and RNA binding proteins, which are linked to the fragments, then we can say that our concept can be proved. The mechanism lists below:</line>
+<first>Our goal is to use circRNA as molecular scaffold to colocalization enzymes to accelerate their reaction rate. For the proof of concept, we planed to perform split EGFP, which is an usual method to detect protein-protein interaction. If we can demonstrate that two EGFP fragments can be dragged to each other through the interaction between RNA aptamer and RNA binding proteins, which are linked to the fragments, then we can say that our concept can be proved. The mechanism lists below:</first>
 <photo>{photo1}</photo>
 <note>Figure 1.mechanism of split EGFP</note>
 <line>EGFP splits into to part: EGFP-N and EGFP-C. EGFP-N is fused to MS2 while EGFP-C is fused to PP7, respectively. There are MS2 aptamer and PP7 aptamer on our circRNA scaffold, which have a 10nt length spacer. After the binding of two RBPs, their fused EGFP fragments can be dragged closer and form a complete EGFP. Then we can perform FCM(flow cytometry) to detect brightness.</line>
@@ -356,12 +356,13 @@ export const en = {
 <subtitle>circRNA</subtitle>
 <line>Predict by：RNAComposer</line>
 {rna}
+<note>Structure1: circRNA</note>
 <line>The circRNA we used in the experimental verification contains two protein binding sequences (PBS) MS2 and PP7, that is, theoretically, two stem rings will be formed. We put our circRNA sequence into RNAcomposer for prediction, and obtained the results shown in the figure above. The structure of the two stem rings can be clearly seen from the figure. Our stem ring was not affected by three-dimensional folding. It is feasible at least in binding to the fusion protein.</line>
 <subtitle>Fusion Protein</subtitle>
 {protein1}
-<note>Structure1:cenA-MS2</note>
+<note>Structure2: cenA-MS2</note>
 {protein2}
-<note>Sturcture2:bglA-PP7</note>
+<note>Sturcture3: bglA-PP7</note>
 <line>In order to confirm whether the fused protein can present an ideal state, we asked SYSU-software (the team involved in protein structure prediction in this year's project) to help us predict the structure of our fusion protein.</line>
 <line>We predicted the structure of two fusion proteins, in which cenA is our cellulose endonuclease and bglA is a glucosidase. We fused them with our RNA binding protein (RBP) to enable them to bind to our circRNA framework.</line>
 <line>It can be seen from the prediction results that the two fused proteins can be clearly distinguished and do not interfere with each other, among them, cenA and bglA with large molecular weight and MS2 and PP7 with small molecular weight. It is consistent with our ideal prediction results, which further supports our experimental design</line>
@@ -374,7 +375,7 @@ export const en = {
 
     parts: `
     <title>Update parts </title>
-<line>Based on the existing part BBa_K118023 (coding sequence of cenA), we updated the sequence by coden optimization. CenA is an endo-glucanase (Endo-1,4-beta-glucanase A) that breaks down water-soluble cellulose into reduced oligo disaccharides. This enzyme plays a critical role during the process of cellulose degradation. Thus, we updated a new part BBa_K3960013 (coding sequence of cenA_optimized ). The rate of expression is believed to be improved by coden optimization. </line>
+<first>Based on the existing part BBa_K118023 (coding sequence of cenA), we updated the sequence by coden optimization. CenA is an endo-glucanase (Endo-1,4-beta-glucanase A) that breaks down water-soluble cellulose into reduced oligo disaccharides. This enzyme plays a critical role during the process of cellulose degradation. Thus, we updated a new part BBa_K3960013 (coding sequence of cenA_optimized ). The rate of expression is believed to be improved by coden optimization. </first>
 <title>New parts</title>
 <line>We uploaded parts BBa_K3960001 to BBa_K3960006 that respectively encodes proteins MS2，pp7, Qβ,SLBP and λN. These basic parts are commonly used RNA binding proteins (RBPs) that maybe helpful for future iGEMers. We also uploaded the corresponding RNA binding sequence BBa_K3960006 to BBa_K39600010 which show the stemloop for RBPs binding. (The binding sites of MS2 and PP7 will be shown on part BBa_K3960016 and BBa_K3960017 )</line>
 <line>We also fused MS2 with the N-terminal of EGFP(1-158AAs) and PP7 with C-terminal of EGFP (159-238AAs) respectively(BBa_K3960011 and BBa_K3960012). Both of the two recombinant proteins use 12AAs flexible linker to connect two separated functional domains. These two component parts will be useful for detecting the interaction between two RBPs(MS2 and PP7) on a single RNA scaffold. The MS2 and PP7 are respectively replaced by optimized_CenA and BglA in component parts BBa_K3960014 and BBa_K3960015. These two component parts are used to detect the efficiency of cellulose degradation in our in vitro  experiment. They may be useful for other RNA scaffolds that contain MS2 and PP7 binding sites. </line>
@@ -383,7 +384,7 @@ export const en = {
 
     engineering_overview: `
     <title>Overview</title>
-<line>Every step of our project follows the Design-Build-Test-Learn (DBTL) cycle, which is one of the major ideas of iGEM. Due to the further spread of COVID-19, our work was restricted throughout the year. The present situation requires more effort and more extensive learning. It took us about four months to construct the basic idea of our project, and five months to build and validate it. Our work was mainly divided into two parts, respectively proceeded in dry lab and wet lab. Both of the experiments were carried out independently, complementing with each other. The whole process of our engineering is as follow. </line>
+<first>Every step of our project follows the Design-Build-Test-Learn (DBTL) cycle, which is one of the major ideas of iGEM. Due to the further spread of COVID-19, our work was restricted throughout the year. The present situation requires more effort and more extensive learning. It took us about four months to construct the basic idea of our project, and five months to build and validate it. Our work was mainly divided into two parts, respectively proceeded in dry lab and wet lab. Both of the experiments were carried out independently, complementing with each other. The whole process of our engineering is as follow. </first>
 <line>Taking inspiration from the cellulosome in some types of bacteria, we attempted to improve the hydrolysis efficiency of cellulase by shortening the distance between several hydrolases. We selected three key enzymes, including endo-1,4-β-D-glucanase(EG), exo-1,4-β-D-glucanase(CBH) and β-1,4-glucosidase(BG). We simulated this process in the<link>dry laboratory.=>/model</link></line>
 <line>Based on the relatively stable properties of circRNAs, we constructed cellulase reaction system using it as the scaffold. To enable the enzyme to be fixed to the scaffold, we plan to fusion express the enzyme with the RBP through a linker. Considering the differences of properties and Kd, we chose MS2 and PP7 as our adapter RBPs. Once the cellulase system is proven to be practical, this model will be extended to other multienzyme metabolic pathways.</line>
 <line>We planned to validate our system in both eukaryotic and prokaryotic cells. In eukaryotic systems, Split-EGFP, a common protein for molecular experiments, can directly show the interaction between protein and RNA.</line>
@@ -544,7 +545,7 @@ To learn more, you can go to the <link>design=>/project/design</link> page.`,
     `,
 
     hp_overview: `
-<line>In order to make our work responsible and good for the world, we conducted human practice to communication with other people, asking their advice, collaborating with them and geting feedback to improve our project.</line>
+<first>In order to make our work responsible and good for the world, we conducted human practice to communication with other people, asking their advice, collaborating with them and geting feedback to improve our project.</first>
 <line>Below, we will outline what we have done, which is summarized as follows. For details, you can visit the corresponding page provided:</line>
 <subtitle>Interga Human Practices</subtitle>
 <line>How our human practices impact on our design including idea, circRNA structure, detection and so on. <more>interga</more></line>
@@ -599,7 +600,7 @@ To learn more, you can go to the <link>design=>/project/design</link> page.`,
     `,
 
     hp_collaborations: `
-    <line>In order to better improve our project and promote synthetic biology, we have carried out many short-term or long-term cooperation with many other teams such as scu-china, SCUT China and SYSU software this year.</line>
+    <first>In order to better improve our project and promote synthetic biology, we have carried out many short-term or long-term cooperation with many other teams such as scu-china, SCUT China and SYSU software this year.</first>
     
 <title>With SCU-CHINA</title>
 <line >In order to promote synthetic biology and let the general public know more specific and in-depth contents of synthetic biology and even biological research. At the invitation of Sichuan University, we jointly launched a special course project on synthetic biology. A series of synthetic biology online courses were recorded with several iGEM competition teams in China who have accumulated experience in specific topics. Realize the expansion of synthetic biology to other biological fields and other disciplines. Increase the influence of iGEM community and play a positive role in attracting and cultivating more talents in the field of synthetic biology.</line >
@@ -644,7 +645,7 @@ In the process of cooperation, we adjust our own projects by absorbing the ideas
     `,
 
     hp_partnership: `
-    <line>This year, we have carried out long-term cooperation with SYSU-software, which runs through the whole year of our project. Since the establishment of the team, we have cooperated and actively discussed in many aspects such as project progress, project design and experimental planning. And in this process, we can constantly improve our own projects.</line>
+    <first>This year, we have carried out long-term cooperation with SYSU-software, which runs through the whole year of our project. Since the establishment of the team, we have cooperated and actively discussed in many aspects such as project progress, project design and experimental planning. And in this process, we can constantly improve our own projects.</first>
 <title>Exchange progress</title>
 <line>At the initial stage of team formation, the leaders of our two teams established a common communication group. In the group, we will irregularly exchange questions encountered in the process of project progress, and adjust our plan by understanding the progress of the other team.</line>
 <photo>{photo1}</photo>
@@ -686,7 +687,7 @@ In the process of cooperation, we adjust our own projects by absorbing the ideas
     hp_implementation: `
    <title>Implementation</title>
 <subtitle>The public</subtitle>
-<line>We are concerned about the production of clean fuel ethanol, but we are not limited to doing it in the laboratory.As young scientists, it is crucial to get out of the ivory tower and get in touch with the masses.We want to have better contact with the public. Due to the influence of the epidemic, we can only contact the public through the Internet. In order to better design the questionnaire, we interviewed Professor Li Tianming,who specialized in socio-ecological at the School of Life Sciences, Sun Yat-sen University.He told us that the application should focus on user experience.Attention should be paid to the consumption of cellulose and precious grain in the production of industrial alcohol.And if it is applied to food,food safety and people's acceptance of GM food should be emphasized.When we design a questionnaire,ensuring the privacy of the participating public is important.</line>
+<first>We are concerned about the production of clean fuel ethanol, but we are not limited to doing it in the laboratory.As young scientists, it is crucial to get out of the ivory tower and get in touch with the masses.We want to have better contact with the public. Due to the influence of the epidemic, we can only contact the public through the Internet. In order to better design the questionnaire, we interviewed Professor Li Tianming,who specialized in socio-ecological at the School of Life Sciences, Sun Yat-sen University.He told us that the application should focus on user experience.Attention should be paid to the consumption of cellulose and precious grain in the production of industrial alcohol.And if it is applied to food,food safety and people's acceptance of GM food should be emphasized.When we design a questionnaire,ensuring the privacy of the participating public is important.</first>
 <photo>{photo1}</photo>
 <note>Figure 1.Visit a professor specialized in socio-ecological</note>
  <line>So we started with the problem of environmental pollution and discussed with people how to reduce pollution and save energy in daily life, to understand the public's acceptance of ethanol fuel produced using synthetic biology. This is different from GM food, and it will be a little more acceptable.In addition, we only collected two basic information about age occupation and promised to keep the results of the questionnaire confidential to ensure public privacy.The results show people believe that immediate action is needed for the spread of clean energy, which also makes our project more hopeful. You can find analysis of questionnaire results in the<download>Questionnaire results=>https://2021.igem.org/wiki/images/3/32/T--SYSU-CHINA--surveyResult.pdf</download>.</line>
@@ -711,7 +712,7 @@ In the process of cooperation, we adjust our own projects by absorbing the ideas
 
     hp_communication: `
     <title>Enterprise visit</title>
-<line>A mature program needs to be refined in ways such as the feasibility, safety, realistic significance and so on. Therefore, advice from potential stakeholders is of great importance for us  to ensure that our project could meet real-world demands. Also, we need to learn more about the industrial environment. For the reasons above, we visited a enterprise.</line>
+<first>A mature program needs to be refined in ways such as the feasibility, safety, realistic significance and so on. Therefore, advice from potential stakeholders is of great importance for us  to ensure that our project could meet real-world demands. Also, we need to learn more about the industrial environment. For the reasons above, we visited a enterprise.</first>
 <line>Vland is a leading biological company, focusing on the development, production and sales of enzyme reagents, animal health products and so on. We were fortunate to have access to the company to learn. We not only visited the production workshop and the reasearch and development center, but also got a valuable opportunity to interview Dr. Mark, an important researcher of Vland. The communication with him brought very significant inspiration to our project.</line>
 <line>From our meeting with Dr. Mark, we learned:</line>
 <line>Factors limiting yield in today's production;</line>
@@ -749,7 +750,7 @@ In the process of cooperation, we adjust our own projects by absorbing the ideas
     hp_education: `
     <title>Social media</title>
 <subtitle>1.Science Video</subtitle>
-<line>As the latest research hotspot in RNA in recent years, circRNA is still a relatively unknown molecule to most of our peers. In the process of designing our project, igemers from SYSU-CHINA considered circRNA as a very promising molecule for research and application. Therefore, we hope that more people will have a better understanding of circRNA and the molecular scaffold we have built up based on circRNA. We made a science video about molecular scaffolds and uploaded it to bilibili, which got considerable views and positive feedback from people. We believe that more and more people will be interested in circRNA and join this field after watching the video.</line>
+<first>As the latest research hotspot in RNA in recent years, circRNA is still a relatively unknown molecule to most of our peers. In the process of designing our project, igemers from SYSU-CHINA considered circRNA as a very promising molecule for research and application. Therefore, we hope that more people will have a better understanding of circRNA and the molecular scaffold we have built up based on circRNA. We made a science video about molecular scaffolds and uploaded it to bilibili, which got considerable views and positive feedback from people. We believe that more and more people will be interested in circRNA and join this field after watching the video.</first>
 <photo>{photo1}</photo>
 <note>Figure 1 Our account on bilibili</note>
 <subtitle>2.WECHAT public account tweet</subtitle>
@@ -788,12 +789,12 @@ In the process of cooperation, we adjust our own projects by absorbing the ideas
     `,
 
     members: `
-<line>SYSU-CHINA (Sun Yat-Sen University iGEM Experimental Team) was founded by the School of Life Sciences, Sun Yat-Sen University. Thanks to the support of the college and the talents of the students, SYSU-CHINA has worked hard and achieved a lot since its first competition in 2009. The team of SYSU-CHINA in 2021 is made up of students from school of Life Sciences, School of Communication and Design and school of medicine. Let’s see who the members are.(The list is in no particular order).</line>
+<first>SYSU-CHINA (Sun Yat-Sen University iGEM Experimental Team) was founded by the School of Life Sciences, Sun Yat-Sen University. Thanks to the support of the college and the talents of the students, SYSU-CHINA has worked hard and achieved a lot since its first competition in 2009. The team of SYSU-CHINA in 2021 is made up of students from school of Life Sciences, School of Communication and Design and school of medicine. Let’s see who the members are.(The list is in no particular order).</first>
     `,
 
     attributions: `
     <title>Attribution:</title>
-  <line>We feel privileged to be blessed with the opportunity to complete most of our panned job regardless of the timely interfere of the outbreak. The team was able to unit to continue the process of idea production, both wet and dry lab, human practice work and designing of wiki, videos, etc. The work done is approved by the team, and the credit goes to all team members for their collaboration. The details are given below. Names are sequenced according to the alphabet.</line>
+  <first>We feel privileged to be blessed with the opportunity to complete most of our panned job regardless of the timely interfere of the outbreak. The team was able to unit to continue the process of idea production, both wet and dry lab, human practice work and designing of wiki, videos, etc. The work done is approved by the team, and the credit goes to all team members for their collaboration. The details are given below. Names are sequenced according to the alphabet.</first>
 <subtitle>Brainstorms:</subtitle>
   <line>Staring point: Nov. 2020: Bingnan Zhao, Jingyuan Bian, Sijun Li, Sisi Ying, Qing Dong, Wanling Chen, Xuming Zeng, Yating Yu, Zhiqin Chen</line>
   <line>PI: Rui Zhang, professor of School of Lifesciences</line>

@@ -10,12 +10,13 @@ import {
   Latex,
   LocaleText,
   MenuScroller,
+  ModelFigure,
   PredictForm,
   ReactionLineChart,
   Webgl3D
 } from "../widgets"
 
-export const Model: React.FC = () => {
+const Model: React.FC = () => {
   const dispatch = useDispatch()
   const target = useSelector((state: State) => state.ui.target)
 
@@ -41,9 +42,10 @@ export const Model: React.FC = () => {
         <Box w={720} fontSize={28} textAlign={"center"}>
           Experimental design mainly includes three key points: circrna, fusion protein and multi enzyme reaction
         </Box>
-        <Image src={"https://2021.igem.org/wiki/images/8/82/T--SYSU-CHINA--model.png "} py={20}/>
 
-        <VStack w={"80%"} mx={"auto"}>
+        <ModelFigure/>
+
+        <VStack w={"90%"} mx={"auto"}>
           <Element name={"overview"}>
             <LocaleText id={"model_overview"}/>
           </Element>
@@ -156,3 +158,5 @@ n^{\\prime}=\\frac{n K_{\\mathrm{d}}}{[R N A]} _{(11)}
 
   </React.Fragment>
 }
+
+export default Model

@@ -1,6 +1,7 @@
 import {Box, Button, HStack} from "@chakra-ui/react"
 import {Form, Formik} from "formik"
 import React from "react"
+import {toast} from "react-toastify"
 import {number, object, string} from "yup"
 import {InputItem} from "./index"
 
@@ -62,7 +63,7 @@ export const PredictForm: React.FC = () => {
         quantityList.push(Math.round(tmp))
       }
 
-    alert(quantityList)
+    toast(`The optimal concentration of each reaction channel are ${quantityList}`)
   }
 
   return <Box w={800} m={"30px auto"}>
@@ -96,14 +97,16 @@ export const PredictForm: React.FC = () => {
                        placeholder={"Number of reaction channels"}/>
             <InputItem label={"Substrate concentration(mol/L)"} name={"substrateCon"}
                        placeholder={"Substrate concentration(mol/L)"}/>
-            <InputItem label={"Expected response time(s)"} name={"reactTime"} placeholder={"Expected response time(s)"}/>
+            <InputItem label={"Expected response time(s)"} name={"reactTime"}
+                       placeholder={"Expected response time(s)"}/>
             <InputItem label={"Michaelis constant"} name={"michaelisConstant"} placeholder={"Michaelis constant"}/>
           </Box>
           <Box flex={1}>
             <InputItem label={"Maximum reaction rate"} name={"maxRate"} placeholder={"Maximum reaction rate"}/>
             <InputItem label={"Equilibrium constant"} name={"equConstant"} placeholder={"Equilibrium constant"}/>
             <InputItem label={"rna concentration"} name={"rnaCon"} placeholder={"rna concentration"}/>
-            <InputItem label={"rbp dissociation constant"} name={"dissociationCon"} placeholder={"rbp dissociation constant"}/>
+            <InputItem label={"rbp dissociation constant"} name={"dissociationCon"}
+                       placeholder={"rbp dissociation constant"}/>
           </Box>
         </HStack>
         <Button
@@ -113,7 +116,7 @@ export const PredictForm: React.FC = () => {
           type="submit"
           colorScheme={"twitter"}
           letterSpacing="1.5px">
-          确认提交
+          confirm submission
         </Button>
       </Form>
     </Formik>

@@ -1,12 +1,16 @@
 import {chakra, Image} from "@chakra-ui/react"
 import React, {memo} from "react"
+import HpImage from "../assets/hp.webp"
+import ModelImage from "../assets/model.webp"
+import PartsImage from "../assets/parts.webp"
+import ProjectImage from "../assets/project.webp"
+import TeamImage from "../assets/team.webp"
 import {Loading} from "./Loading"
 
 export const LoadingImage: React.FC<{ url: string }> = memo(({url, ...rest}) => <chakra.img
   src={`https://2021.igem.org/wiki/images/${url}`}
   alt={""}
   fallback={<Loading/>}
-  filter={"blur(10px)"}
   maxW={800}
   minH={300}
   m={"45px auto 0"}
@@ -14,18 +18,12 @@ export const LoadingImage: React.FC<{ url: string }> = memo(({url, ...rest}) => 
   {...rest}
 />)
 
-export const ProjectImage: React.FC = () =>
-  <Image
-    src={"https://2021.igem.org/wiki/images/e/ec/T--SYSU-CHINA--project.png"} py={20}/>
+export const ProjectFigure: React.FC = () => <Image src={ProjectImage} py={20}   draggable={false}/>
 
-export const PartsImage: React.FC = () =>
-  <Image src={"https://2021.igem.org/wiki/images/8/8d/T--SYSU-CHINA--parts.png"}
-         py={20}/>
+export const ModelFigure: React.FC = () => <Image src={ModelImage} py={20}   draggable={false}/>
 
-export const HPImage: React.FC = () =>
-  <Image src={"https://2021.igem.org/wiki/images/1/11/T--SYSU-CHINA--hp.png"}
-         py={20}/>
+export const PartsFigure: React.FC = () => <Image src={PartsImage} py={20}   draggable={false}/>
 
-export const TeamImage: React.FC = () =>
-  <Image src={"https://2021.igem.org/wiki/images/1/13/T--SYSU-CHINA--team.png"}
-         py={20}/>
+export const HpFigure: React.FC = () => <Image src={HpImage} py={20}   draggable={false}/>
+
+export const TeamFigure: React.FC = () => <Image src={TeamImage} py={20}   draggable={false}/>

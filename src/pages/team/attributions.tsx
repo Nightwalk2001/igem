@@ -1,14 +1,14 @@
 import {VStack} from "@chakra-ui/react"
 import React from "react"
-import {Abstract, ContentWrapper, LocaleText, Subject, TeamImage} from "../../widgets"
+import {Abstract, ContentWrapper, LocaleText, Subject, TeamFigure} from "../../widgets"
 
-export const Attributions: React.FC = () => {
-  return <ContentWrapper>
-    <VStack>
-      <Subject id={"attributions"}/>
-      <Abstract id={"attributions"}/>
-      <TeamImage/>
-      <LocaleText id={"attributions"}/>
-    </VStack>
-  </ContentWrapper>
-}
+const Attributions: React.FC = () => <ContentWrapper>
+  <VStack>
+    <Subject id={"attributions"}/>
+    <Abstract id={"attributions"}/>
+    <TeamFigure/>
+    <LocaleText id={"attributions"}/>
+  </VStack>
+</ContentWrapper>
+
+export default Attributions

@@ -9,7 +9,7 @@ type SubjectProps = {
 export const Subject: React.FC<SubjectProps> = ({id}) => {
   const intl = useIntl()
   return <Box
-    w={600}
+    w={650}
     m={"40px 50px  20px"}
     fontSize={64}
     fontWeight={"extrabold"}

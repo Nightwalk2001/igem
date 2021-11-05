@@ -1,13 +1,13 @@
 import {VStack} from "@chakra-ui/react"
 import React from "react"
-import {Abstract, ContentWrapper, HPImage, LocaleText, Subject} from "../../widgets"
+import {Abstract, ContentWrapper, HpFigure, LocaleText, Subject} from "../../widgets"
 
-export const Partnership: React.FC = () => {
+const Partnership: React.FC = () => {
   return <ContentWrapper>
     <VStack>
       <Subject id={"partnership"}/>
       <Abstract id={"partnership"}/>
-      <HPImage/>
+      <HpFigure/>
       <LocaleText
         id={"hp_partnership"}
         extraValues={{
@@ -26,3 +26,5 @@ export const Partnership: React.FC = () => {
     </VStack>
   </ContentWrapper>
 }
+
+export default Partnership

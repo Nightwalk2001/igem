@@ -2,14 +2,14 @@ import {Icon, Menu, MenuButton, MenuList, VStack} from "@chakra-ui/react"
 import React from "react"
 import {IoMenu} from "react-icons/io5"
 import {Element} from "react-scroll"
-import {Abstract, ContentWrapper, LocaleText, MenuScroller, PartsImage, Subject} from "../../widgets"
+import {Abstract, ContentWrapper, LocaleText, MenuScroller, PartsFigure, Subject} from "../../widgets"
 
-export const Engineering: React.FC = () => <React.Fragment>
+const Engineering: React.FC = () => <React.Fragment>
   <ContentWrapper>
     <VStack>
       <Subject id={"engineering"}/>
       <Abstract id={"engineering"}/>
-      <PartsImage/>
+      <PartsFigure/>
       <Element name={"overview"}>
         <LocaleText id={"engineering_overview"}/>
       </Element>
@@ -86,3 +86,5 @@ export const Engineering: React.FC = () => <React.Fragment>
   </Menu>
 </React.Fragment>
 
+
+export default Engineering

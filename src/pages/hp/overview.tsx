@@ -1,9 +1,9 @@
 import {chakra, Tooltip, useColorModeValue, VStack} from "@chakra-ui/react"
 import React from "react"
 import {useHistory} from "react-router-dom"
-import {Abstract, ContentWrapper, HPImage, LocaleText, Subject} from "../../widgets"
+import {Abstract, ContentWrapper, HpFigure, LocaleText, Subject} from "../../widgets"
 
-export const Overview: React.FC = () => {
+const Overview: React.FC = () => {
   const history = useHistory()
   const linkColor = useColorModeValue("#59c9c8", "#8457b0")
 
@@ -11,7 +11,7 @@ export const Overview: React.FC = () => {
     <VStack>
       <Subject id={"overview"}/>
       <Abstract id={"overview"}/>
-      <HPImage/>
+      <HpFigure/>
       <LocaleText
         id={"hp_overview"}
         extraValues={{
@@ -27,3 +27,5 @@ export const Overview: React.FC = () => {
     </VStack>
   </ContentWrapper>
 }
+
+export default Overview

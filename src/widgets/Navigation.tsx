@@ -15,6 +15,7 @@ import {IoLanguage, IoLogoGithub} from "react-icons/io5"
 import {useIntl} from "react-intl"
 import {useDispatch} from "react-redux"
 import {useHistory} from "react-router-dom"
+import Logo from "../assets/logo.webp"
 import {switchToEn, switchToZh} from "../store"
 import {ChevronDown} from "./ChevronDown"
 import {ColorSwitch} from "./ColorSwitch"
@@ -47,7 +48,7 @@ export const Navigation: React.FC = () => {
       <HStack justify={"space-between"} flex={1} minw={500} maxW={650}>
         <Tooltip label={intl.formatMessage({id: "home_tooltip"})} placement={"bottom"}>
           <Image
-            src={"https://2021.igem.org/wiki/images/thumb/7/7d/T--SYSU-CHINA--logo.png/320px-T--SYSU-CHINA--logo.png"}
+            src={Logo}
             h={"45px"}
             _hover={{cursor: "pointer"}}
             onClick={() => history.push("/")}
